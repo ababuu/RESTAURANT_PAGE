@@ -1,0 +1,170 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Serif JP', serif;
+}
+body{
+    background-image: url('https://torontolife.com/food/the-citys-best-plant-based-dining/');
+}
+
+.my-tabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+header {
+    background: gray;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.img-container{
+    background: url('./etMap.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.drinks-container img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+.food-container{
+    margin-top: 200px;
+}
+.food-container img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+.tej{
+    height: 590px;
+}
+.tej-detail{
+    margin: 15px;
+}
+.tella{
+    height: 395px;
+}
+.tella-detail{
+    margin: 15px;
+}
+
+.kineto{
+    height: 550px;
+} 
+
+.kineto-detail{
+    margin: 15px;
+}
+
+.areke-detail{
+    margin: 15px;
+}
+
+
+.coffee{
+    position: absolute;
+    top: -200px;
+}
+
+.injera{
+    height: 450px;
+}
+.tibs{
+    height: 450px;
+}
+
+.firfir{
+    position: absolute;
+    top: -50px
+}
+.shiro{
+    height: 400px;
+    position: absolute;
+    top:-10px
+}
+.kitfo{
+    height: 400px;
+    position: absolute;
+    top:-60px;
+}
+
+.beyaynet{
+    position: absolute;
+    top:-60px
+}
+.food-title-container{
+    margin-top: 20px;
+
+}
+.food-title-container,.drinks-title-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.food-title{
+    margin-top: 100px;
+}
+h4{
+    margin-top: 40px;
+}
+.contact img{
+    width: 700px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px !important;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    margin:auto;
+    
+}
+.card {
+    flex: 0 1 29%;
+    /* height: 200px; */
+    background-color: white;
+    box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    /* background: linear-gradient(135deg, rgba(0,0,0,0.1), rgba(255,255,255,0.15)); */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 40px;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.card:hover { transform: scale(1.1); }
+.tab-content {
+    display: none;
+    padding: 0 18px;
+}
+.tab-content.is-active {
+    display: block;
+}

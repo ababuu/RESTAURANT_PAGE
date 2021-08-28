@@ -1,0 +1,52 @@
+import './style.css';
+
+export function initial_page(){
+    const content=document.querySelector('.content');
+    const container=document.createElement('div');
+    const sectionContainer=document.createElement('div');
+    container.classList.add('my-tabs');
+    const nav=document.createElement('nav');
+    nav.classList.add('tabs');
+    const ul=document.createElement('ul');
+    nav.appendChild(ul);
+    const li1=document.createElement('li');
+    li1.classList.add('list-1');
+    const li2=document.createElement('li');
+    li2.classList.add('list-2');
+    const li3=document.createElement('li');
+    li3.classList.add('list-3');
+    ul.appendChild(li1);
+    ul.appendChild(li2);
+    ul.appendChild(li3);
+    const a1=document.createElement('a');
+    a1.textContent='Home';
+    const a2=document.createElement('a');
+    a2.textContent='Food and Drinks';
+    const a3=document.createElement('a');
+    a3.textContent='Visit';
+    li1.appendChild(a1);
+    li2.appendChild(a2);
+    li3.appendChild(a3);
+    a1.setAttribute("href", "#tab-one");
+    a2.href='#tab-two';
+    a3.href='#tab-three';
+    const section1=document.createElement('section');
+    section1.textContent='home';
+    section1.classList.add('tab-content','home');
+    section1.setAttribute('id','tab-one');
+    const section2=document.createElement('section');
+    section2.textContent='section2';
+    section2.classList.add('tab-content', 'menu');
+    section2.setAttribute('id','tab-two');
+    const section3=document.createElement('section');
+    section3.textContent='section3';
+    section3.classList.add('tab-content', 'contact');
+    section3.setAttribute('id','tab-three');
+    container.appendChild(nav);
+    sectionContainer.appendChild(section1);
+    sectionContainer.appendChild(section2);
+    sectionContainer.appendChild(section3);
+    container.appendChild(sectionContainer);
+    content.appendChild(container);
+    return content
+}
