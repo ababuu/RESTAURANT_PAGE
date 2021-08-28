@@ -50,54 +50,47 @@ header {
     position: relative;
 }
 .tej{
-    height: 590px;
+    height: 650px;
 }
-.tej-detail{
-    margin: 15px;
-}
+
 .tella{
-    height: 395px;
+    height: 500px;
 }
-.tella-detail{
-    margin: 15px;
+.areke{
+    height: 500px;
 }
 
 .kineto{
-    height: 550px;
+    height: 640px;
 } 
-
-.kineto-detail{
-    margin: 15px;
-}
-
-.areke-detail{
-    margin: 15px;
-}
 
 
 .coffee{
     position: absolute;
-    top: -200px;
+    top: -100px;
+    height: 600px;
 }
 
 .injera{
-    height: 450px;
+    height: 550px;
 }
 .tibs{
-    height: 450px;
+    height: 550px;
 }
-
+.doro{
+    height: 650px;
+}
 .firfir{
     position: absolute;
     top: -50px
 }
 .shiro{
-    height: 400px;
+    height: 500px;
     position: absolute;
     top:-10px
 }
 .kitfo{
-    height: 400px;
+    height: 600px;
     position: absolute;
     top:-60px;
 }
@@ -105,6 +98,9 @@ header {
 .beyaynet{
     position: absolute;
     top:-60px
+}
+.menu p,h4{
+    margin: 15px;
 }
 .food-title-container{
     margin-top: 20px;
@@ -167,4 +163,79 @@ footer{
 }
 .tab-content.is-active {
     display: block;
+}
+
+@media (max-width:1100px) {
+    .cards{
+        flex-direction: column;
+        width: 80%;
+    }
+    .card{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 30px !important;
+        position: unset !important;
+    }
+    .tej{
+        margin-top: 20px;
+    }
+}
+@media (max-width:800px) {
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 30px !important;
+        position: unset !important;
+    }
+    .tej{
+        margin-top: 20px;
+    }
+}
+@media (max-width:500px) {
+    .cards{
+        flex-direction: column;
+        width: 90%;
+    }
+    .card{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 30px !important;
+        position: unset !important;
+    }
+    .tej{
+        margin-top: 20px;
+    }
+}
+@media (max-width:400px) {
+    .cards{
+        flex-direction: column;
+        width: 95%;
+    }
+    .card{
+        width: 85%;
+        margin: auto;
+        margin-bottom: 30px !important;
+        position: unset !important;
+    }
+    .tej{
+        margin-top: 20px;
+    }
+}
+@media (max-width:300px) {
+    .cards{
+        flex-direction: column;
+        width: 100%;
+    }
+    .card{
+        width: 95%;
+        margin: auto;
+        margin-bottom: 30px !important;
+        position: unset !important;
+    }
+    .tej{
+        margin-top: 20px;
+    }
 }
